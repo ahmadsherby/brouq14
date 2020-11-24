@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.projects_crm_project_6beb0295-a42f-4112-be51-dc205de88c76" model="ir.ui.menu" context="{'studio': True}">
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">CRM project applications</field>
+    <field name="parent_id" ref="crm_project_application.crm_project_application_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.projects_application_9085f3ef-0f20-437a-9129-5ddaf4d55569" model="ir.ui.menu" context="{'studio': True}">
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Applications</field>
+    <field name="parent_id" ref="crm_project_application.crm_project_application_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.crm_project_applicat_6777d042-7a5e-4993-a62e-f736056ccc85" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
+    <field name="name">CRM Project Applications</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-diamond,#f1c40f,#34495e</field>
+  </record>
+  <record id="studio_customization.crm_project_applicat_45dc1165-a73d-4a1d-b328-2379b8921b66" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.crm_project_application"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">CRM Project Applications</field>
+    <field name="parent_id" ref="studio_customization.crm_project_applicat_6777d042-7a5e-4993-a62e-f736056ccc85"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>

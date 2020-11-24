@@ -1,0 +1,14 @@
+The following relational data haven't been exported because they either refer
+to a model that Studio doesn't export, or have no XML id:
+
+Record: studio_customization.projects_crm_project_6beb0295-a42f-4112-be51-dc205de88c76
+Model: ir.ui.menu
+Field: action
+Type: reference
+Value: ir.actions.act_window(368,) ('CRM project applications')
+
+Record: studio_customization.projects_application_9085f3ef-0f20-437a-9129-5ddaf4d55569
+Model: ir.ui.menu
+Field: action
+Type: reference
+Value: ir.actions.act_window(369,) ('Applications')
